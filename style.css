@@ -1,0 +1,489 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+/*font-family: 'Kalam', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./img/banner1.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#nav {
+    background: black;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: -10px;
+    opacity: 3;
+    display: flex;
+    transition: top 0.3s;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-solid {
+    display: none;
+}
+
+.logo {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+}
+
+.menu a:nth-child(5) {
+    background: hsla(123, 62%, 39%, 0.86);
+    border-radius: 8px;
+    margin: 0px 1rem;
+}
+
+.menu i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    background-color: green;
+    border-radius: 8px;
+}
+
+img {
+    height: 500px;
+    width: 350px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+
+.left {
+    flex-basis: 60%;
+    top: 50px;
+}
+
+.left {
+    padding-top: 150px;
+}
+
+.right {
+    flex-basis: 30%;
+}
+
+.left h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(22, 116, 22);
+    margin-top: 20px;
+}
+
+.left h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 5em;
+}
+
+.left p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.5rem;
+}
+
+#hire {
+    text-decoration: none;
+    background-color: green;
+    color: rgb(214, 41, 41);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+#Myp {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border: 1px dashed white;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+}
+
+.bio {
+    display: flex;
+    cursor: pointer;
+    padding: 150px 70px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.leftbio {
+    flex-basis: 40%;
+    /*width*/
+}
+
+.rightbio {
+    flex-basis: 60%;
+}
+
+.rightbio span {
+    color: #a80505;
+    font-weight: 600;
+}
+
+.leftbio img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.rightbio {
+    text-align: right;
+    padding: 0 40px;
+}
+
+.rightbio p {
+    margin: 0px 0;
+    line-height: 2.5rem;
+}
+
+.rightbio h1 {
+    font-size: 3rem;
+}
+
+.hr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+#follow {
+    text-align: center;
+}
+
+#follow i {
+    color: rgb(27, 29, 27);
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+#follow a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#instagram:hover {
+    font-size: 1.8rem;
+    border-radius: 4px;
+    color: rgb(245, 15, 15);
+}
+
+#linkedin:hover {
+    font-size: 1.8rem;
+    border-radius: 4px;
+    color: rgb(33, 12, 222);
+}
+
+#github:hover {
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+.link-h a {
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+.link-h {
+    text-align: center;
+    /* padding: 5px 220px; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.bio {
+    cursor: default;
+}
+
+#cv {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: 1px dashed grey;
+}
+
+#cv:hover {
+    cursor: pointer;
+}
+
+#services {
+    padding: 0px 70px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    transform: scaleX(150deg);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+
+.cardbody {
+    flex-basis: 30%;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.cardbody h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.carding img {
+    width: 100%;
+}
+
+footer {
+    background-color: #6ab04c;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+#hireMe {
+    text-decoration: none;
+    background-color: green;
+    color: rgb(214, 41, 41);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1.5rem;
+}
+
+.carding {
+    width: 100%;
+}
+
+.hr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardbod {
+    position: relative;
+    margin: auto;
+}
+
+.cardbod img {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.context {
+    position: absolute;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    top: 0;
+    padding-top: 50px;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+    transition: 0.5s ease-out;
+    color: #fff;
+    opacity: 0;
+    background-color: #4158D0;
+    background: #FF0099;
+    background: -webkit-linear-gradient(to left, #493240, #FF0099);
+    background: linear-gradient(to left, #493240, #FF0099);
+}
+
+.context h3 {
+    color: #12eb12;
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+}
+
+.context p {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5px;
+}
+
+.cardbod:hover .context {
+    opacity: 1;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 30px;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+#skills h1 {
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    margin-bottom: 50px;
+}
+
+.MYSkill ul {
+    margin-top: -30px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.MYSkill ul li {
+    padding: 3px 0;
+}
+
+.Education {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Education h3 {
+    margin-top: 50px;
+}
+
+#services,
+#skills {
+    background: #00000024;
+}
+
+.MYSkill img {
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+    border-radius: 30%;
+}
+
+.MYSkill ul li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+@media screen and (max-width:768px) {
+    .hr {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #hire {
+        margin: auto;
+    }
+    #Myp {
+        margin: auto;
+    }
+    .bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-h {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #hireMe {
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    #cv {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #skills {
+        margin-top: 100px;
+    }
+    .Education h1 {
+        padding-top: 10px;
+        margin-bottom: -50;
+    }
+    .Education h3 {
+        bottom: -20px;
+    }
+    #skills {
+        padding-top: 50px;
+        margin-top: 0px;
+        height: 200vh;
+    }
+    .left {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width:673px) {
+    .menu a:nth-child(5) {
+        display: none;
+    }
+}
